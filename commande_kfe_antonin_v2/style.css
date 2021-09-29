@@ -1,0 +1,79 @@
+html
+{
+    background-color: #704202;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#logo
+{
+    width: 5.5%;
+    float: left;
+}
+header
+{
+    background-image: url(media/media1.jpg);
+    text-align: center;
+}
+body
+{
+    background-color: rgb(130, 60, 1);
+    text-align: left;
+}
+.bordure
+{
+    text-align: center;
+    border-style: solid;
+}
+
+.anime-boutton {
+    background-color: rgb(130, 60, 1);
+    color: #fff;
+    position: relative;
+    top: -5px;
+    padding: 0.75rem 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 2.5px #656565;
+    transition-property: top, box-shadow, transform;
+    transition-duration: 0.2s, 0.2s, 1s;
+}
+.anime-boutton:hover {
+    top: 0px;
+    box-shadow: 2.5px 2.5px 2.5px 0px #656565;
+}
+.anime-boutton:active {
+    transform: rotateX(360deg);
+    transition-property: none;
+}
+
+.align-kfe-grains
+{
+  margin-left: 2%;
+}
+.align-catalogue
+{
+  margin-left: 2.70%;
+}
+#align-nom
+{
+    margin-left: 2%;
+}
+#align-ville
+{
+    margin-left: 1.75%;
+}
+#align-code-postal
+{
+    margin-left: 5.75%;
+}
+#align-adresse
+{
+  margin-left: 3.65%;
+}
+textarea
+{
+    color: #fff;
+    background-image: url(media/media1.jpg);
+    opacity: 0.6;
+}

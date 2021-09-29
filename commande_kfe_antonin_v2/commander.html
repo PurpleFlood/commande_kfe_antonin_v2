@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>La Machine à Café de Claude de France</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <img src="media/logo.png" alt="logo" id="logo">
+            <h1>La Machine à café de Claude de France</h1>
+            <h2>Remplisser le formulaire ci-dessous et cliquez sur Commander</h2>
+        </header>
+
+        <form class="bordure"> <!-- début du formulaire -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <b>Choisissez votre café : </b>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <br /><select name="select_box_kfe"> <!-- menu déroulant pour choisir le café -->
+                            <option>Mélange maison</option>
+                            <option>Bolivie</option>
+                            <option>Guatemala</option>
+                            <option>Kenya</option>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <b><label for="type">Type : </label><br /></b>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="radio" id="type" name="type_kfe" value="kfe_grains" class="align-kfe-grains">Café en grains<br />
+                                <input type="radio" id="type" name="type_kfe" value="kfe_moulu">Café moulu<br /><br />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <b><label for="options">Options : </label><br /></b>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="options" name="paquet_kdo" value="paquet_kdo">Paquet cadeaux<br />
+                                <input type="checkbox" id="options" name="catalogue" value="catalogue" class="align-catalogue">Joindre un catalogue<br /><br />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        
+                    </thead>
+                </table>
+
+                </select><br />
+
+
+    
+
+
+    
+                <div class="bordure">
+                <b>Coordonnées client : <br /></b>
+                <label for="nom" id="align-nom">Nom : </label>
+                <input type="text" id="nom" name="nom" placeholder="Dupons"><br />
+                <label for="adresse" id="align-adresse">Adresse : </label>
+                <input type="text" id="adresse" name="adresse" placeholder="1 rue de la paix" id="align-adresse"><br />
+                <label for="ville" id="align-ville">Ville : </label>
+                <input type="text" id="ville" name="ville" placeholder="Paris"><br />
+                <label for="code_postal" id="align-code-postal">Code postal : </label>
+                <input type="text" id="code_postal" name="code_postal" placeholder="75000"><br /><br />
+                </div>
+
+
+            <b><label for="commentaires">Vos commentaires : </label><br /></b>
+            <textarea rows="5" placeholder="Inserez votre commentaires...."></textarea><br /><br />
+            <input type="submit" id="commentaires" class="anime-boutton" name="envoyer">
+            <input type="reset" id="commentaires" class="anime-boutton" name="annuler">
+
+        </form> <!-- fin du formulare -->
+
+        <footer>
+            <p>
+                Tous droits réservés
+            </p>
+        </footer>
+    </body>
+</html>
