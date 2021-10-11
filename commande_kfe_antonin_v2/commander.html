@@ -12,99 +12,51 @@
             <h2>Remplisser le formulaire ci-dessous et cliquez sur Commander</h2>
         </header>
 
-        <form class="bordure"> <!-- début du formulaire -->
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            <b>Choisissez votre café : </b>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <br /><select name="select_box_kfe"> <!-- menu déroulant pour choisir le café -->
-                            <option>Mélange maison</option>
-                            <option>Bolivie</option>
-                            <option>Guatemala</option>
-                            <option>Kenya</option>
-                        </td>
-                    </tr>
-                </tbody>
-                </table>
+        <form class="bordure">
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>
-                                <b><label for="type">Type : </label><br /></b>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <input type="radio" id="type" name="type_kfe" value="kfe_grains" class="align-kfe-grains">Café en grains<br />
-                                <input type="radio" id="type" name="type_kfe" value="kfe_moulu">Café moulu<br /><br />
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <b>Choisissez votre café : </b>
+            <br /><select name="select_box_kfe" class="bordure-menu-text">
+                <option>Mélange maison</option>
+                <option>Bolivie</option>
+                <option>Guatemala</option>
+                <option>Kenya</option>
+            </select><br />
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>
-                                <b><label for="options">Options : </label><br /></b>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <input type="checkbox" id="options" name="paquet_kdo" value="paquet_kdo">Paquet cadeaux<br />
-                                <input type="checkbox" id="options" name="catalogue" value="catalogue" class="align-catalogue">Joindre un catalogue<br /><br />
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table>
-                    <thead>
-                        
-                    </thead>
-                </table>
+            <b>Type :<br /></b>
+            <input type="radio" id="kfe_grains" name="type_kfe" value="kfe_grains">
+            <label for="kfe_grains">Café en grains</label><br />
+            <input type="radio" id="kfe_moulu" name="type_kfe" value="kfe_moulu">
+            <label for="kfe_moulu">Café moulu</label><br /><br />
+            <b>Options :</b><br />
+            <input type="checkbox" id="paquet_kdo" name="paquet_kdo" value="paquet_kdo">
+            <label for="paquet_kdo">Paquet cadeaux</label><br />
+            <input type="checkbox" id="catalogue" name="catalogue" value="catalogue">
+            <label for="catalogue">Joindre un catalogue</label><br /><br />
+            
 
-                </select><br />
-
-
-    
-
-
-    
-                <div class="bordure">
-                <b>Coordonnées client : <br /></b>
-                <label for="nom" id="align-nom">Nom : </label>
-                <input type="text" id="nom" name="nom" placeholder="Dupons"><br />
-                <label for="adresse" id="align-adresse">Adresse : </label>
-                <input type="text" id="adresse" name="adresse" placeholder="1 rue de la paix" id="align-adresse"><br />
-                <label for="ville" id="align-ville">Ville : </label>
-                <input type="text" id="ville" name="ville" placeholder="Paris"><br />
-                <label for="code_postal" id="align-code-postal">Code postal : </label>
-                <input type="text" id="code_postal" name="code_postal" placeholder="75000"><br /><br />
-                </div>
+            <div class="bordure">
+            <b>Coordonnées client : <br /></b>
+            <label for="nom">Nom : </label>
+            <input type="text" id="nom" name="nom" class="bordure-menu-text" placeholder="Dupons"><br />
+            <label for="adresse">Adresse : </label>
+            <input type="text" id="adresse" name="adresse" class="bordure-menu-text" placeholder="1 rue de la paix"><br />
+            <label for="ville" id="align-ville">Ville : </label>
+            <input type="text" id="ville" name="ville" class="bordure-menu-text" placeholder="Paris"><br />
+            <label for="code_postal">Code postal : </label>
+            <input type="text" id="code_postal" name="code_postal" class="bordure-menu-text" placeholder="75000"><br /><br />
+            </div>
 
 
             <b><label for="commentaires">Vos commentaires : </label><br /></b>
-            <textarea rows="5" placeholder="Inserez votre commentaires...."></textarea><br /><br />
+            <textarea rows="5" class="bordure-menu-text" placeholder="Inserez votre commentaires...."></textarea><br /><br />
             <input type="submit" id="commentaires" class="anime-boutton" name="envoyer">
             <input type="reset" id="commentaires" class="anime-boutton" name="annuler">
 
-        </form> <!-- fin du formulare -->
+        </form>
 
         <footer>
             <p>
-                Tous droits réservés
+                © Tous droits réservés
             </p>
         </footer>
     </body>

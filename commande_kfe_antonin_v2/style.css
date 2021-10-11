@@ -19,10 +19,18 @@ body
     background-color: rgb(130, 60, 1);
     text-align: left;
 }
-.bordure
+.center
 {
     text-align: center;
+}
+.bordure
+{
+    text-align: left;
     border-style: solid;
+}
+.bordure-menu-text
+{
+    border-radius: 10px;
 }
 
 .anime-boutton {
@@ -45,31 +53,6 @@ body
 .anime-boutton:active {
     transform: rotateX(360deg);
     transition-property: none;
-}
-
-.align-kfe-grains
-{
-  margin-left: 2%;
-}
-.align-catalogue
-{
-  margin-left: 2.70%;
-}
-#align-nom
-{
-    margin-left: 2%;
-}
-#align-ville
-{
-    margin-left: 1.75%;
-}
-#align-code-postal
-{
-    margin-left: 5.75%;
-}
-#align-adresse
-{
-  margin-left: 3.65%;
 }
 textarea
 {
